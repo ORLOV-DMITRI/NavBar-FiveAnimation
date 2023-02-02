@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+  .nav__links {
+    perspective: 500px;
+  }
+  .nav__links li {
+    animation: animation2 900ms ease forwards;
+    transform: rotateY(90deg) rotateX(90deg);
+    transform-origin: top right;
+    opacity: 0;
+  }
+  .nav__links li:nth-child(2) {
+    animation-delay: 300ms;
+  }
+  .nav__links li:nth-child(3) {
+    animation-delay: 600ms;
+  }
+  .nav__links li:nth-child(4) {
+    animation-delay: 900ms;
+  }
+  .nav__links li:nth-child(5) {
+    animation-delay: 1200ms;
+  }
+
+  @keyframes animation2 {
+    to {
+      transform: rotateY(0);
+      opacity: 1;
+    }
+  }
+}
